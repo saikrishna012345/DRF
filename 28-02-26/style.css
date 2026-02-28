@@ -1,0 +1,33 @@
+.logo{
+margin-left: 450px;
+}
+.heading{
+margin-left: 590px;
+margin-top: -80px;
+font-size:35px;
+}
+.logo1{
+margin-left: 750px;
+margin-top: -350px;
+}
+.mainnav{
+background-color:grey;
+padding:20px;
+text-align:center;
+a{
+text-decoration:none;
+color:black;
+font-size:20px;
+margin-left: 30px;
+
+}
+}
+.content{
+margin-left: 500px;
+margin-top: 50px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

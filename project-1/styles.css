@@ -1,0 +1,158 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: auto;
+}
+.con{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    span{
+        color: orange;
+    }
+}
+.logo {
+    color: orange;
+    font-size: 35px;
+    /* font-family: chiller; */
+    font-family: "Lobster Two", sans-serif;
+    padding-left: 20px;
+    padding-top: 10px;
+    a{
+        text-decoration: none;
+        color: orange;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+        list-style: none;
+        margin-left: 62px;
+        margin-top: 27px;
+        font-size: 14px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+.button{
+    background-color: orange;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.button em{
+    background: transparent;
+    color: black;
+}
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.card{
+    width: 200px;
+    padding: 20px;
+    border: 1px solid orange;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card:hover{
+    background-color: orange;
+    color: black;
+}
+.card:hover h1 {
+    background-color: orange;
+}
+.card h2{
+    background:transparent;
+}
+.card p{
+    background:transparent;
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid gray;
+}
+
+
+
+
+
+
+
+
+
+
+.form-container{
+width:400px;
+margin:50px auto;
+padding:30px;
+border-radius:10px;
+border:2px solid orange;
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.input-group{
+margin-bottom:15px;
+display:flex;
+flex-direction:column;
+}
+
+input, select, textarea{
+padding:10px;
+border-radius:5px;
+border:1px solid orange;
+color:white;
+}
+
+textarea{
+resize:none;
+height:80px;
+}
+
+.phn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.moto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

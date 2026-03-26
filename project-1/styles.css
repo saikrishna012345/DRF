@@ -104,6 +104,7 @@ footer{
     text-align: center;
     padding: 20px;
     border-top: 1px solid gray;
+    position: relative;
 }
 
 

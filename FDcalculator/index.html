@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+        integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <h1>FD calculator</h1>
+            </div>
+            <div class="row1">
+                <div class="col-6 col-md-4">
+                    <div class="form-group">
+                        <label for="uname" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="uname">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount" class="form-label">Amount</label>
+                        <input type="number" class="form-control" id="amount">
+                    </div>
+                    <div class="form-group">
+                        <label for="tenure" class="form-label">Tenure</label>
+                        <input type="number" class="form-control" id="tenure">
+                    </div>
+                    <div class="form-group">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="age">
+                    </div>
+                    <div id="status">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success" type="submit" onclick="changeit()">Sumbit</button>
+                        <button class="btn btn-danger " type="reset">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeit() {
+            var uname = document.getElementById("uname").value;
+            var amount = parseInt(document.getElementById("amount").value);
+            var tenure = parseInt(document.getElementById("tenure").value);
+            var age = parseInt(document.getElementById("age").value);
+            if(amount<=0){
+                alert("Enter values in +ve")
+            }
+            if(tenure<=0){
+                alert("Enter values in +ve")
+            }
+            console.log(amount)
+            var roi;
+            if (age > 60) {
+                roi = 8;
+            }
+            else if (age > 25 & age < 60) {
+                roi = 7;
+            }
+            else {
+                roi = 6;
+            }
+            var mat = ((amount * tenure * roi) / 100) +amount;
+            document.getElementById("status").innerHTML="Status : Hey "+uname+" total maturity value is "+mat
+        }
+    </script>
+</body>
+
+</html>
